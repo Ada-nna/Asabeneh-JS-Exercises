@@ -206,12 +206,11 @@ for (let u = 0; u < maxLength; u++) {
 console.log(newNumber);
 
 // Develop a small script which generate array of 5 random numbers and the numbers must be unique
-let lengthh = 5;
-let uniqueRandomNumbers = new Set();
-while (uniqueRandomNumbers.size < lengthh) {
-  uniqueRandomNumbers.add(Math.floor(Math.random() * 5));
-  console.log([...uniqueRandomNumbers]);
-}
+let smallScript = [];
+// for (let i = 0; smallScript.length < 5; i++) {
+  // let uniqueRandomNum = Math.floor(Math.random() * 10);
+  // console.log(uniqueRandomNum);
+// }
 
 // Develop a small script which generate a six characters random id:
 let numChar = "0123456789";
@@ -220,7 +219,8 @@ let charCombination = numChar + letChar;
 let charLength = 6;
 let newRandomChar = "";
 
-for (let ch = 0; ch < charLength; ch++) {
-  newRandomChar += charCombination[Math.floor(Math.random() * charCombination.length)];
-  console.log(newRandomChar);
-}
+// for (let ch = 0; ch < charLength; ch++) {
+//   newRandomChar +=
+//     charCombination[Math.floor(Math.random() * charCombination.length)];
+//   console.log(newRandomChar);
+// }

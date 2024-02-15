@@ -58,16 +58,17 @@ parseFloat(numCheck) % 2 === 0
 // 0-49, F
 
 let studentScore = prompt("Enter a student score:");
+let sScore = parseFloat(studentScore);
 
-if (parseFloat(studentScore) === 80 || parseFloat(studentScore) <= 100) {
+if (sScore >= 80 && sScore <= 100) {
   console.log(`Their score is ${studentScore} and their grade is A`);
-} else if (parseFloat(studentScore) === 70 || parseFloat(studentScore) <= 80) {
+} else if (sScore >= 70 && sScore <= 80) {
   console.log(`Their score is ${studentScore} and their grade is B`);
-} else if (parseFloat(studentScore) === 60 || parseFloat(studentScore) <= 69) {
+} else if (sScore >= 60 && sScore <= 69) {
   console.log(`Their score is ${studentScore} and their grade is C`);
-} else if (parseFloat(studentScore) === 50 || parseFloat(studentScore) <= 59) {
+} else if (sScore >= 50 && sScore <= 59) { 
   console.log(`Their score is ${studentScore} and their grade is D`);
-} else if (parseFloat(studentScore) === 0 || parseFloat(studentScore) <= 49) {
+} else if (sScore >= 0 && sScore <= 49) {
   console.log(`Their score is ${studentScore} and their grade is F`);
 }
 
@@ -80,27 +81,27 @@ if (parseFloat(studentScore) === 80 || parseFloat(studentScore) <= 100) {
 let seasonInput = prompt("Enter any month of the year to check:");
 
 if (
-  seasonInput == "September" ||
-  seasonInput == "October" ||
-  seasonInput == "November"
+  seasonInput == "september" ||
+  seasonInput == "october" ||
+  seasonInput == "november"
 ) {
   console.log(`${seasonInput} is an Autumn season`);
 } else if (
-  seasonInput == "December" ||
-  seasonInput == "January" ||
-  seasonInput == "February"
+  seasonInput == "december" ||
+  seasonInput == "january" ||
+  seasonInput == "february"
 ) {
   console.log(`${seasonInput} is a Winter season`);
 } else if (
-  seasonInput == "March" ||
-  seasonInput == "April" ||
-  seasonInput == "Spring"
+  seasonInput == "march" ||
+  seasonInput == "april" ||
+  seasonInput == "may"
 ) {
   console.log(`${seasonInput} is a Spring season`);
 } else if (
-  seasonInput == "June" ||
-  seasonInput == "July" ||
-  seasonInput == "August"
+  seasonInput == "june" ||
+  seasonInput == "july" ||
+  seasonInput == "august"
 ) {
   console.log(`${seasonInput} is a Summer season`);
 } else {
@@ -111,14 +112,14 @@ if (
 
 let dayType = prompt("What is the day today?");
 
-if (dayType == "Saturday" || dayType == "Sunday") {
+if (dayType == "saturday" || dayType == "sunday") {
   console.log(`${dayType} is a weekend`);
 } else if (
-  dayType == "Monday" ||
-  dayType == "Tuesday" ||
-  dayType == "Wednesday" ||
-  dayType == "Thursday" ||
-  dayType == "Friday"
+  dayType == "monday" ||
+  dayType == "tuesday" ||
+  dayType == "wednesday" ||
+  dayType == "thursday" ||
+  dayType == "friday"
 ) {
   console.log(`${dayType} is a working day`);
 }
@@ -127,23 +128,23 @@ if (dayType == "Saturday" || dayType == "Sunday") {
 let monthOfTheYear = prompt("Enter a month");
 
 switch (monthOfTheYear) {
-  case "January":
-  case "March":
-  case "May":
-  case "July":
-  case "August":
-  case "October":
-  case "December":
+  case "january":
+  case "march":
+  case "may":
+  case "july":
+  case "august":
+  case "october":
+  case "december":
     console.log(`${monthOfTheYear} has 31 days`);
     break;
 
-  case "April":
-  case "June":
-  case "September":
-  case "November":
+  case "april":
+  case "june":
+  case "september":
+  case "november":
     console.log(`${monthOfTheYear} has 30 days`);
     break;
-  case "February":
+  case "february":
     console.log(`${monthOfTheYear} has 28 or 29 days`);
     break;
   default:
